@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --green:#1ed760;
+    --fontGray: #919496;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    height:8em;
+}
+
+header nav.mobile-menu{
+    display:none;
+    align-self: center;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100%;
+    width: 90%;
+    margin:auto;
+}
+
+header .logo{
+    display: flex;
+}
+
+header .logo img{
+    align-self: center;
+    height:40px;
+}
+
+header .logo img:hover{
+    cursor:pointer;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height:100%;
+}
+
+header nav ul li{
+    padding: 0 2rem;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+header nav ul li:hover{
+    color: var(--green);
+    cursor:pointer;
+}
+
+header nav.expanded{
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    height:100%;
+    width:70%;
+    background-color:black;
+    border: 3px solid #222326;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top:2rem;
+    padding: 2rem;
+
+}
+
+header nav.expanded p {
+    font-size: 3rem;
+    font-weight: 800;
+}
+header nav.expanded p:hover{
+    cursor: pointer;
+    color: var(--green);
+}
+
+header nav.expanded ul{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header nav.expanded ul li {
+    padding-top:3rem;
+    font-size:2rem;
+}
+
+header nav.expanded ul li:hover{
+    cursor: pointer;
+    color: var(--green);
+}
+
+section.banner {
+    background-color: #2941ab ;
+    height: 120vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--green);
+    background-image: url('https://raw.githubusercontent.com/PacktPublishing/web-development-projects/a3e4f06174d61713411bedfcba0c7898680231e6/spotify-landing-page/media/bg/main.svg');
+    background-size: 175%;
+    background-position: 46% 4%;
+    background-repeat: no-repeat;
+}
+
+section.banner h1{
+    font-size: 12rem;
+    line-height: 1.2;
+}
+
+section.banner p{
+    font-size:1.6rem;
+    margin:2rem 0;
+    text-align:center;
+}
+
+section.banner button{
+    background-color:var(--green) ;
+    color:#2941ab;
+    font-size: 1.8rem;
+    font-weight:600;
+    font-size:1.4rem;
+    padding:1.8rem 2.7rem;
+    border-radius: 3rem;
+    border:none;
+    margin:2rem 0;
+}
+
+section.banner button:hover{
+    cursor:pointer;
+    transform:scale(104%, 104%);
+}
+
+footer{
+    background-color: black;
+}
+
+footer section.container {
+    width:90%;
+    margin:auto;
+    display:flex;
+    padding:6rem 0 4rem 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer .logo .img{
+    width:70%
+}
+
+footer .logo .img {
+    cursor: pointer;
+}
+
+footer .links {
+    display:flex;
+    flex-wrap:wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
+    
+}
+
+footer .links ul li{
+    font-size: 1.5rem;
+    padding:1.3rem;
+}
+
+footer .links ul li:hover{
+    cursor: pointer;
+    color:var(--green);
+}
+
+footer .links ul .heading:hover{
+    cursor: text;
+    color: var(--fontGray);
+}
+
+footer .links ul .heading{
+    color: var(--fontGray);
+    font-weight:700;
+    font-size:1.3rem;
+}
+
+footer .social {
+    flex-grow:1;
+    margin: 20px 0;
+}
+
+footer .social ul{
+    display:flex;
+    justify-content: center;
+}
+
+footer .social ul li {
+    font-size: 2.6rem;
+    background-color: #222326;
+    height:5.5rem;
+    width:5.5rem;
+    margin: 0 0.6rem;
+    justify-items: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6rem;
+}
+
+footer .social ul li:hover{
+    cursor:pointer;
+    color:var(--green)
+}
+
+footer .location {
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    margin-top:10rem;
+    font-size:1.2rem;
+    color:var(--fontGray);
+}
+
+footer .location:hover {
+    cursor: pointer;
+    color:var(--green) ;
+}
+
+footer .location i{
+    align-self: center;
+}
+
+footer .location span {
+    padding:0 1rem;
+}
+
+footer .extras {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+footer .extras ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 45px 0 0;
+
+}
+
+footer .extras ul li {
+    font-size:1.1rem;
+    color: var(--fontGray);
+    padding: 1rem;
+}
+
+footer .extras ul li:hover{
+    cursor:pointer;
+    color:var(--green);
+}
+
+
+footer .extras span{
+    font-size:1.2rem;
+    color: var(--fontGray);
+    padding: 0 1rem 0 0;
+    align-self:center;
+} 

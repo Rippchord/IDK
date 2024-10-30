@@ -1,0 +1,78 @@
+@media (min-width:1279px) {
+    
+}
+
+@media (max-width:1279px) {
+
+    section.banner{
+        background-image: url('https://raw.githubusercontent.com/PacktPublishing/web-development-projects/a3e4f06174d61713411bedfcba0c7898680231e6/spotify-landing-page/media/bg/main-tablet.svg');
+        background-size: 155%;
+        background-position: right 40% center;
+        background-repeat: no-repeat;
+    }
+    section.banner h1 {
+        font-size:10rem;
+    }
+}
+@media (max-width:768px) {
+
+    header{
+        height:6rem;
+    }
+
+    header .logo img{
+        height:30px;
+    }
+    section.banner h1 {
+        font-size:6rem;
+    }
+    header nav.desktop-menu{
+        display: none;
+    }
+    header nav.mobile-menu{
+        display: inline;
+
+    }
+    header nav.mobile-menu img{
+        height:25px;
+        width:25px;
+    }
+
+    header nav.mobile-menu img:hover{
+        cursor: pointer;
+    }
+
+    footer .links{
+        width:100%;
+        margin:2rem auto;
+        flex-direction: column;
+    }
+    footer .company , footer .communities, footer .useful-links{
+        margin-top: 2rem;
+    }
+
+    footer .extras span {
+        margin-top: 2rem;
+    }
+}
+@media (max-width:480px) {
+
+    header {
+        height: 5rem;
+    }
+    header .logo img {
+       height: 25px;
+
+    }
+    section.banner{
+        background-image: url('https://raw.githubusercontent.com/PacktPublishing/web-development-projects/a3e4f06174d61713411bedfcba0c7898680231e6/spotify-landing-page/media/bg/bursts-mobile.svg');
+        background-size: 195%;
+        background-position: center top 50%;
+        background-repeat: no-repeat;
+    }
+    section.banner h1 {
+        font-size:5rem;
+    }
+
+
+}
